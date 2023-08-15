@@ -1,25 +1,32 @@
-import logo from './logo.svg';
-import './App.css';
+import {BrowserRouter, Route, Routes} from "react-router-dom";
+import {Home} from "./components/pages/Home";
+import {About} from "./components/pages/About";
+import {Error} from "./components/pages/Error";
+import {HeaderLayout} from "./components/layout/HeaderLayout";
+import {FooterLayout} from "./components/layout/FooterLayout";
+import { ConfigProvider } from 'antd';
 
-function App() {
+export const App = () => {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+      <ConfigProvider
+    theme={{
+        token: {
+            // Seed Token
+            colorPrimary: '#00b96b',
+                borderRadius: 2,
+                // Alias Token
+                colorBgContainer: '#f6ffed',
+        },
+    }}>
+          <BrowserRouter>
+          <HeaderLayout />
+              <Routes>
+                  <Route path='/' element={<Home />} />
+                  <Route path='/about' element={<About />} />
+                  <Route path='*' element={<Error />} />
+              </Routes>
+          <FooterLayout />
+          </BrowserRouter>
+      </ConfigProvider>
   );
 }
-
-export default App;
