@@ -2,7 +2,7 @@ import React from 'react';
 import { Layout } from 'antd';
 import {GithubOutlined, TwitterOutlined} from "@ant-design/icons";
 
-export const FooterLayout = () => {
+const FooterLayout = () => {
     return (
         // eslint-disable-next-line react/jsx-no-undef
         <Layout.Footer style={{ textAlign: 'center' }} className="bg-gray-900 text-white">
@@ -20,3 +20,5 @@ export const FooterLayout = () => {
         </Layout.Footer>
     );
 };
+
+export {FooterLayout}

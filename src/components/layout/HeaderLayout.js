@@ -2,7 +2,7 @@ import { Layout, Menu } from 'antd';
 import {Link} from "react-router-dom";
 
 
-export const HeaderLayout = () => {
+const HeaderLayout = () => {
     return (
         <Layout.Header>
             <div className="logo" />
@@ -13,8 +13,18 @@ export const HeaderLayout = () => {
                 <Menu.Item key="2">
                     <Link to='/about'>About</Link>
                 </Menu.Item>
+                <Menu.Item key="3">
+                    <Link to='/contact'>Contact</Link>
+                </Menu.Item>
+                <Menu.Item key="4">
+                    <Link to='/fetch'>Fetch Data</Link>
+                </Menu.Item>
+                <Menu.Item key="5">
+                    <Link to='/firstProject'>First Project</Link>
+                </Menu.Item>
             </Menu>
         </Layout.Header>
     );
 }
 
+export {HeaderLayout}
