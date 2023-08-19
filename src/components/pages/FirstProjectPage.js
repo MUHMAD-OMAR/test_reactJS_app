@@ -2,17 +2,17 @@ import React, {useState} from 'react';
 import DataCount from "../firstProject/DataCount";
 import DataPerson from "../firstProject/DataPerson";
 import ButtonProject from "../firstProject/ButtonProject";
-import firstData from "../../firstData";
+import secondData from "../secondProject/secondData";
 
 const FirstProjectPage = () => {
-    const [persons, setPersons] = useState(firstData);
+    const [persons, setPersons] = useState(secondData);
 
     const deleteAllPersons = () => {
         setPersons([]);
     }
 
     const showAllPersons = () => {
-        setPersons(firstData);
+        setPersons(secondData);
     }
 
 

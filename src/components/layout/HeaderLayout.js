@@ -22,6 +22,12 @@ const HeaderLayout = () => {
                 <Menu.Item key="5">
                     <Link to='/firstProject'>First Project</Link>
                 </Menu.Item>
+                <Menu.Item key="6">
+                    <Link to='/secondProject'>Second Project</Link>
+                </Menu.Item>
+                <Menu.Item key="7">
+                    <Link to='/thirdProject'>Third Project</Link>
+                </Menu.Item>
             </Menu>
         </Layout.Header>
     );

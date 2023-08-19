@@ -1,4 +1,4 @@
-const firstData = [
+const secondData = [
     {"id": 0, "name": "Ali", "img": "https://i.pravatar.cc/150?img=1", "date": "sun"},
     {"id": 1, "name": "Omar", "img": "https://i.pravatar.cc/150?img=2", "date": "Mon"},
     {"id": 2, "name": "Rasha", "img": "https://i.pravatar.cc/150?img=3", "date": "thu"},
@@ -7,4 +7,4 @@ const firstData = [
 ]
 
 
-export default firstData;
+export default secondData;
