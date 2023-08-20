@@ -2,12 +2,12 @@ import React, {useState} from 'react';
 import {Input, Button} from 'antd';
 import {SearchOutlined} from '@ant-design/icons';
 
-const HeaderProject = () => {
+const HeaderProject = ({handelSearch}) => {
     const [searchValue, setSearchValue] = useState('');
 
     const handleSearch = () => {
         // Your search logic goes here
-        console.log(`Searching for: ${searchValue}`);
+        handelSearch(searchValue);
     };
 
     return (

@@ -1,6 +1,6 @@
 import React, {useEffect, useState} from "react";
-import FormProject from "../secondProject/FormProject";
-import ListProject from "../secondProject/ListProject";
+import FormProject from "../components/secondProject/FormProject";
+import ListProject from "../components/secondProject/ListProject";
 import {toast, ToastContainer} from "react-toastify";
 import 'react-toastify/dist/ReactToastify.css';
 

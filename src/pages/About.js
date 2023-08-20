@@ -1,5 +1,5 @@
 import React, {useContext} from 'react';
-import {ColorContext} from "../providers/ColorContextProvider";
+import {ColorContext} from "../components/providers/ColorContextProvider";
 
 export const About = () => {
 

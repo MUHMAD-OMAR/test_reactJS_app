@@ -1,8 +1,8 @@
 import React, {useState} from 'react';
-import DataCount from "../firstProject/DataCount";
-import DataPerson from "../firstProject/DataPerson";
-import ButtonProject from "../firstProject/ButtonProject";
-import secondData from "../secondProject/secondData";
+import DataCount from "../components/firstProject/DataCount";
+import DataPerson from "../components/firstProject/DataPerson";
+import ButtonProject from "../components/firstProject/ButtonProject";
+import secondData from "../components/secondProject/secondData";
 
 const FirstProjectPage = () => {
     const [persons, setPersons] = useState(secondData);

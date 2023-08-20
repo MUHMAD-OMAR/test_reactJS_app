@@ -1,6 +1,6 @@
 import React, {useReducer} from 'react';
 import {Button} from "antd";
-import counterReducer from "../../reducers/counterReducer";
+import counterReducer from "../reducers/counterReducer";
 
 const initialCounter = {
     counter: 0

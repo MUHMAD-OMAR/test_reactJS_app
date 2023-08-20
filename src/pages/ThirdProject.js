@@ -1,8 +1,8 @@
 import React, {useState} from 'react';
-import HeaderProject from "../thirdProject/HeaderProject";
-import CategoryProject from "../thirdProject/CategoryProject";
-import FoodCard from "../thirdProject/FoodCard";
-import foods from "../thirdProject/ThirdData";
+import HeaderProject from "../components/thirdProject/HeaderProject";
+import CategoryProject from "../components/thirdProject/CategoryProject";
+import FoodCard from "../components/thirdProject/FoodCard";
+import foods from "../components/thirdProject/ThirdData";
 
 
 const ThirdProject = () => {
@@ -18,9 +18,16 @@ const ThirdProject = () => {
     }
 
 
+    const filterSearch = (txt) => {
+        const items = foods.filter((item) => item.name.includes(txt));
+        setFoodsList(items);
+    }
+
+
+
     return (
         <div className="bg-gray-900 text-white min-h-screen">
-            <HeaderProject/>
+            <HeaderProject handelSearch={filterSearch}/>
 
             <CategoryProject filterByCategory={filterFoods} list={foodsList}/>
 

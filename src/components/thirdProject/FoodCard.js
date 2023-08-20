@@ -1,4 +1,5 @@
 import React from 'react';
+import {Link} from "react-router-dom";
 
 const FoodCard = ({list}) => {
     return (
@@ -7,7 +8,8 @@ const FoodCard = ({list}) => {
                 list.length > 0 ?
                     list.map((item, index) => {
                         return (
-                            <div key={index} className="flex items-center my-4 mx-24 p-8 rounded-xl bg-blue-800">
+                            <Link to={`/thirdProject/${item.id}`}
+                                  key={index} className="flex items-center my-4 mx-24 p-8 rounded-xl bg-blue-800">
                                 <div className="flex-shrink-0">
                                     <img src={item.img} alt={item.name} className="h-16 w-16 rounded-md object-cover"/>
                                 </div>
@@ -18,7 +20,7 @@ const FoodCard = ({list}) => {
                                 <div className="ml-auto">
                                     <span className="text-lg font-bold">${item.price}</span>
                                 </div>
-                            </div>
+                            </Link>
                         )
                     })
                     :

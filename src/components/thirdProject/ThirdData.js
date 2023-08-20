@@ -1,6 +1,6 @@
 const foods = [
     {
-        id: "1",
+        id: 1,
         name: "فول",
         category: "فطور",
         img: "https://i.pravatar.cc/150?img=3",
@@ -8,7 +8,7 @@ const foods = [
         description: "Fucking ...... You Bitch Pusy"
     },
     {
-        id: "1",
+        id: 2,
         name: "حمص",
         category: "فطور",
         img: "https://i.pravatar.cc/150?img=6",
@@ -16,7 +16,7 @@ const foods = [
         description: "Fucking ...... You Bitch Pusy"
     },
     {
-        id: "1",
+        id: 3,
         name: "مجدرة",
         category: "غداء",
         img: "https://i.pravatar.cc/150?img=7",
@@ -24,7 +24,7 @@ const foods = [
         description: "Fucking ...... You Bitch Pusy"
     },
     {
-        id: "1",
+        id: 4,
         name: "رز وشوربة",
         category: "غداء",
         img: "https://i.pravatar.cc/150?img=33",
@@ -32,7 +32,7 @@ const foods = [
         description: "Fucking ...... You Bitch Pusy"
     },
     {
-        id: "1",
+        id: 5,
         name: "شاورما",
         category: "غداء",
         img: "https://i.pravatar.cc/150?img=22",

@@ -28,6 +28,9 @@ const HeaderLayout = () => {
                 <Menu.Item key="7">
                     <Link to='/thirdProject'>Third Project</Link>
                 </Menu.Item>
+                <Menu.Item key="8">
+                    <Link to='/reduxPage'>Redux Project</Link>
+                </Menu.Item>
             </Menu>
         </Layout.Header>
     );

@@ -2,7 +2,7 @@ import {Content} from "antd/es/layout/layout";
 import {Button, Input, Space} from "antd";
 import { HappyProvider } from '@ant-design/happy-work-theme';
 import {useContext, useRef} from "react";
-import {ColorContext} from "../providers/ColorContextProvider";
+import {ColorContext} from "../components/providers/ColorContextProvider";
 
 export const Home = () => {
     // لتعديل قيمة المتغيرات العامة نستخدم هذا الأمر
